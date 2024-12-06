@@ -34,3 +34,6 @@ SELECT titre, auteur, prix FROM Livres WHERE prix > 20;
 -- Clients inscrits après le 1er février 2024
 SELECT nom, email, date_inscription FROM Clients WHERE date_inscription > '2024-02-01';
 
+-- Réduire le stock de 1 pour le livre "1984"
+UPDATE Livres SET stock = stock - 1 WHERE titre = '1984';
+
