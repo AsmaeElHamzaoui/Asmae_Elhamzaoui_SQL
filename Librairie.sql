@@ -16,3 +16,11 @@ CREATE TABLE Livres (
 );
 
 
+-- Créer la table Clients
+CREATE TABLE Clients (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    date_inscription DATE NOT NULL
+);
+
