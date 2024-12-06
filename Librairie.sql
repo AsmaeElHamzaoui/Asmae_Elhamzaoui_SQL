@@ -6,3 +6,13 @@ CREATE DATABASE Librairie;
 USE Librairie;
 
 
+-- Créer la table Livres
+CREATE TABLE Livres (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(255) NOT NULL,
+    auteur VARCHAR(255) NOT NULL,
+    prix DECIMAL(5,2) NOT NULL,
+    stock INT NOT NULL
+);
+
+
