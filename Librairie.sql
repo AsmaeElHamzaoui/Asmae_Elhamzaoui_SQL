@@ -84,3 +84,4 @@ DELETE FROM Clients WHERE email = 'bob.robert@email.fr';
 -- Ajouter un nouveau livre à la table Livres
 INSERT INTO Livres (titre, auteur, prix, stock) VALUES
 ('Le Seigneur des Anneaux', 'J.R.R. Tolkien', 30.00, 7);
+
