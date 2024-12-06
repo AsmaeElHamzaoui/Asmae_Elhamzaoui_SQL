@@ -24,33 +24,6 @@ CREATE TABLE Clients (
     date_inscription DATE NOT NULL
 );
 
-Voici les requêtes SQL correspondant à chaque étape de votre demande.
-
-1. Création de la base de données et des tables
-sql
-Copier le code
--- Création de la base de données Librairie
-CREATE DATABASE Librairie;
-
--- Sélection de la base de données
-USE Librairie;
-
--- Création de la table Livres
-CREATE TABLE Livres (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titre VARCHAR(255) NOT NULL,
-    auteur VARCHAR(255) NOT NULL,
-    prix DECIMAL(5,2) NOT NULL,
-    stock INT NOT NULL
-);
-
--- Création de la table Clients
-CREATE TABLE Clients (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    date_inscription DATE NOT NULL
-);
 
 -- Insertion des données dans la table Livres
 INSERT INTO Livres (titre, auteur, prix, stock) VALUES
