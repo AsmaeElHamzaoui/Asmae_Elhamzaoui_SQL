@@ -37,3 +37,6 @@ SELECT nom, email, date_inscription FROM Clients WHERE date_inscription > '2024-
 -- Réduire le stock de 1 pour le livre "1984"
 UPDATE Livres SET stock = stock - 1 WHERE titre = '1984';
 
+-- Supprimer un client dont l'email est "bob.robert@email.fr"
+DELETE FROM Clients WHERE email = 'bob.robert@email.fr';
+
