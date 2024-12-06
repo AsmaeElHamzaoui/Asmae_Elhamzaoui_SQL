@@ -24,9 +24,13 @@ CREATE TABLE Clients (
     date_inscription DATE NOT NULL
 );
 
+
 -- Liste des livres disponibles avec leur titre, auteur et prix 
 SELECT titre, auteur, prix FROM Livres;
 
 --Livres dont le prix est supérieur à 20 euros
 SELECT titre, auteur, prix FROM Livres WHERE prix > 20;
+
+-- Clients inscrits après le 1er février 2024
+SELECT nom, email, date_inscription FROM Clients WHERE date_inscription > '2024-02-01';
 
